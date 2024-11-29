@@ -14,14 +14,12 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #1c1c1c, #434343);
+      background: linear-gradient(135deg, #1c1c1c, #434343); /* Original gradient background */
       color: #d4af37; /* Gold Text */
       text-align: center;
       overflow-x: hidden;
-      position: relative;
       padding: 0 20px;
-      opacity: 0; /* Start hidden */
-      animation: fadeIn 1.5s forwards; /* Fade-in animation */
+      animation: fadeIn 1.5s ease-in-out;
     }
 
     h1 {
@@ -31,13 +29,10 @@
       margin-bottom: 20px;
       color: #f5f5f5; /* Shiny Silver */
       text-transform: uppercase;
-      opacity: 0;
-      animation: fadeIn 2s forwards;
-      animation-delay: 0.5s; /* Delay for a staggered effect */
-    }
-
-    h1 span {
-      color: #ffd700; /* Gold Highlight */
+      background: linear-gradient(90deg, #ffd700, #ff9c33); /* Gold Gradient Text */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeIn 1.5s ease-in-out;
     }
 
     p {
@@ -46,9 +41,7 @@
       margin-bottom: 40px;
       color: #eaeaea;
       text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.3);
-      opacity: 0;
-      animation: fadeIn 2s forwards;
-      animation-delay: 1s; /* Delay for a staggered effect */
+      animation: fadeIn 1.5s ease-in-out;
     }
 
     .container {
@@ -57,6 +50,7 @@
 
     .hero {
       margin: 50px auto;
+      animation: fadeIn 1.5s ease-in-out;
     }
 
     /* Buttons */
@@ -73,9 +67,7 @@
       text-decoration: none;
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 0 0 10px #ffd700;
       transition: transform 0.3s, box-shadow 0.3s;
-      opacity: 0;
-      animation: fadeIn 2s forwards;
-      animation-delay: 1.5s; /* Delay for a staggered effect */
+      animation: fadeIn 1.5s ease-in-out;
     }
 
     .survey-button:hover {
@@ -98,9 +90,7 @@
       border-radius: 15px;
       margin: 40px 0;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-      opacity: 0;
-      animation: fadeIn 2s forwards;
-      animation-delay: 2s; /* Delay for a staggered effect */
+      animation: fadeIn 1.5s ease-in-out;
     }
 
     .highlight p {
@@ -112,16 +102,6 @@
     .highlight span {
       color: #ffd700;
       font-weight: bold;
-    }
-
-    /* Fade In Animation */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
     }
 
     /* Media Queries for Mobile */
@@ -149,6 +129,18 @@
       color: #bbb;
       padding: 20px 0;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Keyframes for fade-in and upward motion */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
