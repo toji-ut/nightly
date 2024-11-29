@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transform Your Nightlife</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+      padding: 0 20px;
+    }
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: #d9d9d9;
+    }
+    .container {
+      padding: 50px 20px;
+    }
+    .hero {
+      margin: 80px auto;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    /* Buttons */
+    .survey-button {
+      padding: 15px 40px;
+      margin: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(90deg, #ff512f, #dd2476);
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .survey-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+    }
+    /* Footer */
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #777;
+      padding: 20px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
-    
+  <div class="container">
+    <div class="hero">
+      <h1>Transform Your Nightlife</h1>
+      <p>Discover, connect, and make every night unforgettable.</p>
+      <a href="https://yoursurveylink.com" target="_blank" class="survey-button">Take the Survey</a>
+    </div>
+    <footer>
+      © 2024 Nightly App. All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>
