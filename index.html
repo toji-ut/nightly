@@ -14,8 +14,8 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #1c1c1c, #434343); /* Original gradient background */
-      color: #d4af37; /* Gold Text */
+      background: #121212; /* Midnight Black */
+      color: #B0BEC5; /* Silver Gray text */
       text-align: center;
       overflow-x: hidden;
       padding: 0 20px;
@@ -27,20 +27,19 @@
       font-weight: bold;
       margin-top: 60px;
       margin-bottom: 20px;
-      color: #f5f5f5; /* Shiny Silver */
-      text-transform: uppercase;
-      background: linear-gradient(90deg, #ffd700, #ff9c33); /* Gold Gradient Text */
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: #fff; /* White color for "Elevate Your" */
       animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 span {
+      color: #FF6F00; /* Neon Orange for the word "Nights" */
     }
 
     p {
       font-size: 1.2rem;
       line-height: 1.8;
       margin-bottom: 40px;
-      color: #eaeaea;
-      text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.3);
+      color: #B0BEC5; /* Silver Gray for text */
       animation: fadeIn 1.5s ease-in-out;
     }
 
@@ -60,24 +59,26 @@
       font-size: 1.2rem;
       font-weight: bold;
       color: #fff;
-      background: linear-gradient(90deg, #ffd700, #ff9c33); /* Gold Gradient */
+      background: #FF6F00; /* Neon Orange */
       border: none;
       border-radius: 30px;
       cursor: pointer;
       text-decoration: none;
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 0 0 10px #ffd700;
-      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
       animation: fadeIn 1.5s ease-in-out;
     }
 
     .survey-button:hover {
       transform: scale(1.05);
-      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5), 0 0 20px #ffd700;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+      filter: brightness(1.2);
+      text-shadow: 0 0 10px #FF6F00, 0 0 20px #FF6F00, 0 0 30px #FF6F00; /* Glow effect */
     }
 
     .cta-text {
       font-size: 1rem;
-      color: #f5f5f5;
+      color: #FF6F00; /* Neon Orange for emphasis */
       font-style: italic;
       margin-top: 10px;
     }
@@ -95,12 +96,12 @@
 
     .highlight p {
       font-size: 1.1rem;
-      color: #eaeaea;
+      color: #B0BEC5; /* Silver Gray */
       margin-bottom: 10px;
     }
 
     .highlight span {
-      color: #ffd700;
+      color: #FF6F00; /* Neon Orange for highlighted text */
       font-weight: bold;
     }
 
@@ -115,7 +116,7 @@
       .survey-button {
         font-size: 1rem;
         padding: 10px 20px;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 0 8px #ffd700;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
       }
       .highlight {
         padding: 15px;
@@ -126,7 +127,7 @@
     footer {
       margin-top: 50px;
       font-size: 0.9rem;
-      color: #bbb;
+      color: #777;
       padding: 20px 0;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
@@ -144,12 +145,23 @@
     }
   </style>
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBN1D7FNXM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HBN1D7FNXM');
+</script>
+
 <body>
   <div class="container">
     <div class="hero">
       <h1>Elevate Your <span>Nights</span></h1>
       <p>
-        Redefine nightlife with an experience that’s as golden as it is unforgettable.  
+        Redefine your nightlife with an experience that’s golden and unforgettable.  
         Your thoughts can help us shine brighter.      
       </p>
       <div class="highlight">
