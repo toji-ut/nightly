@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elevate Your Nights</title>
+  <title>Transform Your Nightlife</title>
   <style>
-    /* General Reset */
+    
     * {
       margin: 0;
       padding: 0;
@@ -13,43 +13,41 @@
     }
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #2b2b2b, #434343);
-      color: #d4af37; /* Gold Text */
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: white;
       text-align: center;
       overflow-x: hidden;
       padding: 0 20px;
     }
     h1 {
-      font-size: 3.2rem;
-      font-weight: bold;
-      margin-top: 60px;
+      font-size: 3.5rem;
+      font-weight: 700;
       margin-bottom: 20px;
-      color: #f4f4f4; /* Silver Title */
-      text-transform: uppercase;
-    }
-    h1 span {
-      color: #d4af37; /* Gold Highlight */
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     p {
       font-size: 1.2rem;
-      line-height: 1.8;
-      margin-bottom: 40px;
-      color: #e0e0e0; /* Light Grey Text */
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: #d9d9d9;
     }
     .container {
-      padding: 40px 20px;
+      padding: 50px 20px;
     }
     .hero {
-      margin: 50px auto;
+      margin: 80px auto;
+      animation: fadeIn 1.5s ease-in-out;
     }
-    /* Buttons */
+
     .survey-button {
-      padding: 15px 50px;
-      margin: 20px;
-      font-size: 1.3rem;
+      padding: 15px 40px;
+      margin: 10px;
+      font-size: 1.2rem;
       font-weight: bold;
-      color: #fff;
-      background: linear-gradient(90deg, #d4af37, #a97c50); /* Gold Gradient */
+      color: white;
+      background: linear-gradient(90deg, #ff512f, #dd2476);
       border: none;
       border-radius: 30px;
       cursor: pointer;
@@ -61,32 +59,32 @@
       transform: scale(1.1);
       box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
     }
-    /* Divider */
-    .divider {
-      width: 100px;
-      height: 2px;
-      background: #d4af37;
-      margin: 20px auto 40px;
-    }
-    /* Footer */
+
     footer {
       margin-top: 50px;
       font-size: 0.9rem;
-      color: #999;
+      color: #777;
       padding: 20px 0;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="hero">
-      <h1>Elevate Your <span>Nights</span></h1>
-      <div class="divider"></div>
-      <p>
-        Explore, connect, and redefine nightlife with a touch of elegance.  
-        Take part in shaping the ultimate bar experience tailored for you.
-      </p>
+      <h1>Transform Your Nightlife</h1>
+      <p>Discover, connect, and make every night unforgettable.</p>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScnWR0IpqgSHHeL7k98EPPBXRs8WA9x77-q4IdlDa3iEnRjGg/viewform" target="_blank" class="survey-button">Take the Survey</a>
     </div>
     <footer>
