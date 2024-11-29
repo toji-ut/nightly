@@ -21,7 +21,7 @@
       padding: 0 20px;
     }
     h1 {
-      font-size: 3.5rem;
+      font-size: 3rem;
       font-weight: bold;
       margin-top: 60px;
       margin-bottom: 20px;
@@ -32,7 +32,7 @@
       color: #ffd700; /* Gold Highlight */
     }
     p {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       line-height: 1.8;
       margin-bottom: 40px;
       color: #eaeaea;
@@ -43,25 +43,24 @@
     }
     .hero {
       margin: 50px auto;
-      animation: fadeIn 1.5s ease-in-out;
     }
     /* Buttons */
     .survey-button {
-      padding: 15px 50px;
-      margin: 20px;
-      font-size: 1.5rem;
+      display: inline-block;
+      padding: 12px 30px;
+      font-size: 1.2rem;
       font-weight: bold;
       color: #fff;
       background: linear-gradient(90deg, #ffd700, #ff9c33); /* Gold Gradient */
       border: none;
-      border-radius: 50px;
+      border-radius: 30px;
       cursor: pointer;
       text-decoration: none;
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 0 0 10px #ffd700;
       transition: transform 0.3s, box-shadow 0.3s;
     }
     .survey-button:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
       box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5), 0 0 20px #ffd700;
     }
     .cta-text {
@@ -80,7 +79,7 @@
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     }
     .highlight p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: #eaeaea;
       margin-bottom: 10px;
     }
@@ -88,15 +87,21 @@
       color: #ffd700;
       font-weight: bold;
     }
-    /* Animations */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
+    /* Media Queries for Mobile */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.5rem;
       }
-      to {
-        opacity: 1;
-        transform: translateY(0);
+      p {
+        font-size: 1rem;
+      }
+      .survey-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 0 8px #ffd700;
+      }
+      .highlight {
+        padding: 15px;
       }
     }
     /* Footer */
@@ -115,17 +120,18 @@
       <h1>Elevate Your <span>Nights</span></h1>
       <p>
         Redefine nightlife with an experience that’s as golden as it is unforgettable.  
-        Your thoughts can help us shine brighter.      </p>
+        Your thoughts can help us shine brighter.      
+      </p>
       <div class="highlight">
         <p>
           <span>Exclusive Opportunity:</span> Complete the survey and shape the future of nightlife. It takes less than 2 minutes!
         </p>
         <p>Join <span>thousands</span> of others who’ve already shared their thoughts.</p>
       </div>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLScnWR0IpqgSHHeL7k98EPPBXRs8WA9x77-q4IdlDa3iEnRjGg/viewform" target="_blank" class="survey-button">Take the Survey</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScnWR0IpqgSHHeL7k98EPPBXRs8WA9x77-q4IdlDa3iEnRjGg/viewform" target="_blank" class="survey-button">Take the Survey Now</a>
     </div>
     <footer>
-      © 2024 Nightlife Redefined. All rights reserved.
+      © 2024 Nightly App. All rights reserved.
     </footer>
   </div>
 </body>
